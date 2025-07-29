@@ -1,0 +1,32 @@
+<div class="parent-body-style">
+    <div class="parent-column-style">
+      <div>
+        <img src="assets/images/parent.png" alt="" height="100px" width="100px">
+      </div>
+      <div>
+         <h3>
+          {{parentName}}
+         </h3>
+      </div>
+    </div>
+</div>
+<div class="child-body-style">
+    <div class="child-column-style">
+      <div>
+        <img src="assets/images/child.png" alt="" height="100px" width="100px">
+      </div>
+      <div>
+         <h3>
+          {{childName}}
+         </h3>
+      </div>
+      <div class="ml-5">
+        <input type="text" [formControl]="changedChildName">
+       </div>
+       <div class="ml-5">
+        <button class="btn btn-primary" (click)="ClickOnChangingChildName()">
+            Change Child Name
+        </button>
+       </div>
+    </div>
+</div>
